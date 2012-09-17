@@ -11,7 +11,7 @@ ActiveRecord::Base.establish_connection(
 )  
   
 
-class Recipedesc < ActiveRecord::Base
+class RecipeDesc < ActiveRecord::Base
 end
 url = "http://www.simplyrecipes.com/recipe-index.php"
 doc = Nokogiri::HTML(open(url))

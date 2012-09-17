@@ -5,5 +5,5 @@ Query OK, 0 rows affected (0.13 sec)
 
 table for recipedesc
 
-mysql> create table recipedescs (id int not null auto_increment,name varchar(100),link text,primary key (id));
+mysql> create table recipe_descs (id int not null auto_increment,name varchar(100),link text,primary key (id));
 Query OK, 0 rows affected (0.13 sec)
