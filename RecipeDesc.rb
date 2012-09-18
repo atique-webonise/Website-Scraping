@@ -31,7 +31,7 @@ puts img_tag
 if img_tag.to_s == ''								#for checking str1 contains img tag or not
 imgsrc=nil
 else
-imgsrc=str1.attribute('src').to_s				#copying image src to local variable
+imgsrc=img_tag.attribute('src').to_s				#copying image src to local variable
 end
 descrp = doc1.at_css(".center p").content		#copying the description
 ingrnt =doc1.at_css("#recipe-ingredients").content		#copying the ingredients
