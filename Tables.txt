@@ -1,9 +1,9 @@
-Table for Recipe
+Table for RecipeDesc
 
-mysql> create table recipes (id int not null auto_increment,imagesrc varchar(100),descr text,ingredients text,method text,primary key (id));
+mysql> create table recipe_descs(id int not null auto_increment,imagesrc varchar(100),descr text,ingredients text,method text,primary key (id));
 Query OK, 0 rows affected (0.13 sec)
 
-table for recipedesc
+table for Recipe
 
-mysql> create table recipe_descs (id int not null auto_increment,name varchar(100),link text,primary key (id));
+mysql> create table recipe (id int not null auto_increment,name varchar(100),link text,primary key (id));
 Query OK, 0 rows affected (0.13 sec)

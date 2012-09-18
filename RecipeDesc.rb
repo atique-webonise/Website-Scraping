@@ -23,12 +23,12 @@ Recipe.create(:link => links[i][0], :name => links[i][1])
 puts links[i][0]
 end
 for i in 10...15
-url1 = links[i][0]
-puts url1
-doc1 = Nokogiri::HTML(open(url1))				#opening inner links for retrieving data
-str1 =doc1.at_css(".entry-photo img")	
-puts str1
-if str1.to_s == ''								#for checking str1 contains img tag or not
+inner_url = links[i][0]
+puts inner_url
+doc1 = Nokogiri::HTML(open(inner_url))				#opening inner links for retrieving data
+img_tag =doc1.at_css(".entry-photo img")	
+puts img_tag
+if img_tag.to_s == ''								#for checking str1 contains img tag or not
 imgsrc=nil
 else
 imgsrc=str1.attribute('src').to_s				#copying image src to local variable
